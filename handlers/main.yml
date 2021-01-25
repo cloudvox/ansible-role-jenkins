@@ -10,3 +10,4 @@
     group: "{{ jenkins_process_group }}"
     mode: 0775
   register: jenkins_users_config
+  when: jenkins_reset_basic_security | bool
